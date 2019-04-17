@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+
+  tester:
+    build:
+      context: .
+      dockerfile: docker/test.Dockerfile
+      target: tester
+
+  docserver:
+    build:
+      context: .
+      dockerfile: docker/test.Dockerfile
+      target: docserver
